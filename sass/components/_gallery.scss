@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--kegel-3);
+  padding: var(--kegel-3);
+}
+
+.gallery__item {
+  overflow: hidden;
+}
+
+.gallery__item > img {
+  display: block;
+  width: 100%;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -5,5 +5,45 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+  color: var(--oc-gray-8);
+}
+
+strong {
+  font-weight: var(--weight-medium);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: var(--weight-semibold);
+  color: var(--gray-8);
+  letter-spacing: -0.1rem;
+}
+
+.heading-primary {
+  font-size: var(--kegel-15);
+  line-height: var(--line-height-xs);
+}
+
+.heading-secondary {
+  font-size: var(--kegel-13);
+  margin-bottom: var(--space-3);
+  line-height: var(--line-height-sm);
+}
+
+.heading-tertiary {
+  font-size: var(--kegel-10);
+  margin-bottom: var(--kegel-10);
+  line-height: var(--line-height-sm);
+}
+
+.subheading {
+  display: block;
+  font-size: var(--kegel-5);
+  font-weight: var(--weight-medium);
+  color: var(--oc-orange-7);
+  text-transform: uppercase;
+  margin-bottom: var(--kegel-5);
+  letter-spacing: 0.1rem;
 }

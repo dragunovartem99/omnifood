@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+
+.plans {
+  padding-block: var(--space-4);
+}
+
+.plan {
+  &__item {
+    .list {
+      margin-bottom: var(--kegel-14);
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: var(--kegel-14);
+  }
+
+  &__name {
+    color: var(--oc-orange-8);
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    font-size: var(--kegel-7);
+    letter-spacing: 0.075rem;
+    margin-bottom: var(--kegel-11);
+  }
+
+  &__price {
+    font-size: var(--space-1);
+    font-weight: var(--weight-semibold);
+    color: var(--oc-gray-8);
+    margin-bottom: var(--kegel-2);
+
+    span {
+      font-size: var(--kegel-10);
+      font-weight: var(--weight-medium);
+      margin-right: 0.8rem;
+    }
+  }
+
+  &__text {
+    font-size: var(--kegel-5);
+    line-height: var(--line-height-lg);
+    color: var(--oc-gray-6);
+  }
+
+  &__signup {
+    text-align: center;
+  }
+}

@@ -1,0 +1,53 @@
+@use "../abstracts/" as *;
+
+.link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    color: var(--oc-orange-5);
+    text-decoration: none;
+    border-bottom: 0.1rem solid currentColor;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--oc-orange-7);
+    border-bottom-color: transparent;
+  }
+}
+
+.btn {
+  color: var(--oc-white);
+  font-size: var(--kegel-7);
+  padding: var(--kegel-5) var(--kegel-10);
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 1rem;
+  font-weight: var(--weight-medium);
+}
+
+.btn--primary {
+  background-color: var(--oc-orange-5);
+  color: var(--oc-white);
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: var(--oc-orange-6);
+  }
+}
+
+.btn--white {
+  background-color: var(--oc-white);
+  color: inherit;
+  border: 0.3rem solid transparent;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: transparent;
+    border: 0.3rem solid var(--oc-orange-1);
+  }
+}

@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.featured {
+  padding-block: var(--kegel-15) var(--kegel-11);
+
+  .heading-secondary {
+    font-size: var(--kegel-5);
+    color: var(--oc-gray-6);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.075rem;
+    font-weight: var(--weight-semibold);
+    margin-bottom: var(--kegel-9);
+  }
+}
