@@ -411,7 +411,7 @@ strong {
 }
 
 .hero-w {
-  background-color: red;
+  background-color: var(--oc-orange-0);
   padding-block: var(--space-1) var(--space-4);
 }
 
