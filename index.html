@@ -334,10 +334,10 @@
           </figure>
         </div>
       </section>
-      <div class="plans container">
+      <section class="plans container">
         <div class="subheading">Pricing</div>
         <h2 class="heading-secondary">Eating well without breaking the bank</h2>
-        <div class="grid grid-cols-2">
+        <div class="plan__items">
           <div class="plan__item">
             <header class="plan__header">
               <div class="plan__name">Starter</div>
@@ -353,11 +353,15 @@
                 </li>
                 <li class="list__item">
                   <ion-icon name="checkmark-outline"></ion-icon>
-                  <span>Order times are between 11am and 9pm</span>
+                  <span>Order from 11am to 9pm</span>
                 </li>
                 <li class="list__item">
                   <ion-icon name="checkmark-outline"></ion-icon>
                   <span>Delivery is free</span>
+                </li>
+                <li class="list__item">
+                  <ion-icon name="close-outline"></ion-icon>
+                  <span>&nbsp;</span>
                 </li>
               </ul>
             </div>
@@ -377,11 +381,11 @@
               <ul>
                 <li class="list__item">
                   <ion-icon name="checkmark-outline"></ion-icon>
-                  <span>2 meals per day</span>
+                  <span><strong>2 meals</strong> per day</span>
                 </li>
                 <li class="list__item">
                   <ion-icon name="checkmark-outline"></ion-icon>
-                  <span>Order 24/7</span>
+                  <span>Order <strong>24/7</strong></span>
                 </li>
                 <li class="list__item">
                   <ion-icon name="checkmark-outline"></ion-icon>
@@ -398,7 +402,10 @@
             </div>
           </div>
         </div>
-      </div>
+        <div class="grid grid-cols-4">
+          <div class="feature"></div>
+        </div>
+      </section>
     </main>
 
     <script
