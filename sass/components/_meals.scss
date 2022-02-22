@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .meals {
-  padding-block: 0 var(--space-2);
+  margin-block: 0 var(--space-2);
   &__header {
     text-align: center;
   }
@@ -59,7 +59,7 @@
   &__name {
     font-size: var(--kegel-10);
     color: var(--oc-gray-8);
-    font-weight: var(--weight-bold);
+    font-weight: var(--weight-7);
     margin-bottom: var(--kegel-10);
   }
 

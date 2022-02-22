@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .featured {
-  padding-block: var(--kegel-15) var(--kegel-11);
+  margin-block: var(--kegel-15) var(--kegel-11);
 
   .heading-secondary {
     font-size: var(--kegel-5);
@@ -9,7 +9,7 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.075rem;
-    font-weight: var(--weight-semibold);
+    font-weight: var(--weight-7);
     margin-bottom: var(--kegel-9);
   }
 }

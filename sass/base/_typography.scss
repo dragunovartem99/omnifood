@@ -10,32 +10,30 @@ body {
 }
 
 strong {
-  font-weight: var(--weight-medium);
+  font-weight: var(--weight-5);
 }
 
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
-  font-weight: var(--weight-semibold);
+  font-weight: var(--weight-7);
   color: var(--gray-8);
   letter-spacing: -0.1rem;
+  line-height: var(--line-height-1);
 }
 
 .heading-primary {
   font-size: var(--kegel-15);
-  line-height: var(--line-height-xs);
 }
 
 .heading-secondary {
   font-size: var(--kegel-13);
   margin-bottom: var(--space-3);
-  line-height: var(--line-height-sm);
 }
 
 .heading-tertiary {
   font-size: var(--kegel-10);
   margin-bottom: var(--kegel-10);
-  line-height: var(--line-height-sm);
 }
 
 .subheading {

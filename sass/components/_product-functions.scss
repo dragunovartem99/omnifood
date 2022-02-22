@@ -48,12 +48,12 @@
 
   &__number {
     font-size: var(--space-5);
-    font-weight: var(--weight-bold);
+    font-weight: var(--weight-7);
     color: var(--oc-gray-3);
   }
 
   &__description {
     font-size: var(--kegel-6);
-    line-height: var(--line-height-xl);
+    line-height: var(--height-9);
   }
 }

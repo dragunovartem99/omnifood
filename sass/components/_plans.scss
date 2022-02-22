@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .plans {
-  padding-block: var(--space-4);
+  margin-block: var(--space-4);
 }
 
 .plan__items {
@@ -32,7 +32,7 @@
       right: 0;
       text-transform: uppercase;
       font-size: var(--kegel-4);
-      font-weight: var(--weight-bold);
+      font-weight: var(--weight-7);
       background-color: var(--oc-yellow-5);
       padding: 0.8rem var(--kegel-15);
       color: var(--oc-gray-8);
@@ -51,7 +51,7 @@
 
   &__name {
     color: var(--oc-orange-8);
-    font-weight: var(--weight-semibold);
+    font-weight: var(--weight-6);
     text-transform: uppercase;
     font-size: var(--kegel-7);
     letter-spacing: 0.075rem;
@@ -60,24 +60,31 @@
 
   &__price {
     font-size: var(--space-1);
-    font-weight: var(--weight-semibold);
+    font-weight: var(--weight-7);
     color: var(--oc-gray-8);
     margin-bottom: var(--kegel-2);
 
     span {
       font-size: var(--kegel-10);
-      font-weight: var(--weight-medium);
+      font-weight: var(--weight-6);
       margin-right: 0.8rem;
     }
   }
 
   &__text {
     font-size: var(--kegel-5);
-    line-height: var(--line-height-lg);
+    line-height: var(--height-7);
     color: var(--oc-gray-6);
   }
 
   &__signup {
     text-align: center;
+  }
+
+  &__details {
+    font-size: var(--kegel-5);
+    line-height: var(--height-5);
+    text-align: center;
+    margin-block: var(--kegel-15);
   }
 }

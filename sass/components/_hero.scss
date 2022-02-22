@@ -2,10 +2,10 @@
 
 .hero-w {
   background-color: var(--oc-orange-0);
-  padding-block: var(--space-1) var(--space-4);
 }
 
 .hero {
+  padding-block: var(--space-1) var(--space-4);
   max-width: 130rem;
   padding-inline: var(--kegel-11);
   margin-inline: auto;
@@ -33,7 +33,7 @@
   &__descr {
     font-size: var(--kegel-7);
     margin-bottom: var(--kegel-13);
-    line-height: var(--line-height-lg);
+    line-height: var(--height-7);
   }
 
   &__customers {
@@ -59,10 +59,10 @@
 
     &__caption {
       font-size: var(--kegel-6);
-      font-weight: var(--weight-medium);
+      font-weight: var(--weight-5);
       span {
         color: var(--oc-orange-7);
-        font-weight: var(--weight-semibold);
+        font-weight: var(--weight-7);
       }
     }
   }

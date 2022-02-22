@@ -19,9 +19,6 @@
 }
 
 .testimonial {
-  &__item {
-  }
-
   &__img {
     width: --space-1;
     border-radius: 50%;
@@ -30,7 +27,7 @@
 
   &__text {
     font-size: var(--kegel-5);
-    line-height: var(--line-height-lg);
+    line-height: var(--height-7);
     margin-bottom: var(--kegel-5);
   }
 
