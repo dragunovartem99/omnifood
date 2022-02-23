@@ -867,6 +867,25 @@ strong {
   line-height: var(--height-7);
 }
 
+.section-cta {
+  margin-block: var(--space-1);
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  background-image: linear-gradient(to right bottom, var(--oc-orange-4), var(--oc-orange-7));
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  min-height: 50rem;
+  border-radius: var(--kegel-1);
+  overflow: hidden;
+}
+.cta__img {
+  background-image: linear-gradient(to right bottom, rgba(var(--oc-orange-4-rgb), 0.3), rgba(var(--oc-orange-7-rgb), 0.3)), url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .container {
   max-width: 120rem;
   margin-inline: auto;
