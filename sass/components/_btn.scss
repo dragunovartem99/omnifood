@@ -18,14 +18,16 @@
 }
 
 .btn {
-  color: var(--oc-white);
+  font-family: inherit;
   font-size: var(--kegel-7);
   padding: var(--kegel-5) var(--kegel-10);
   text-decoration: none;
   display: inline-block;
   vertical-align: middle;
+  border: none;
   border-radius: 1rem;
   font-weight: var(--weight-5);
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -49,5 +51,15 @@
     outline: none;
     background-color: transparent;
     border: 0.3rem solid var(--oc-orange-1);
+  }
+}
+
+.btn--dark {
+  background-color: #45260a;
+  color: var(--oc-orange-1);
+  &:hover,
+  &:active {
+    background-color: var(--oc-gray-1);
+    color: var(--oc-gray-7);
   }
 }

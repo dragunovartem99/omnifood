@@ -356,6 +356,11 @@ body {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem var(--oc-orange-4);
+}
+
 /* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
@@ -480,14 +485,16 @@ strong {
 }
 
 .btn {
-  color: var(--oc-white);
+  font-family: inherit;
   font-size: var(--kegel-7);
   padding: var(--kegel-5) var(--kegel-10);
   text-decoration: none;
   display: inline-block;
   vertical-align: middle;
+  border: none;
   border-radius: 1rem;
   font-weight: var(--weight-5);
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -508,6 +515,15 @@ strong {
   outline: none;
   background-color: transparent;
   border: 0.3rem solid var(--oc-orange-1);
+}
+
+.btn--dark {
+  background-color: #45260a;
+  color: var(--oc-orange-1);
+}
+.btn--dark:hover, .btn--dark:active {
+  background-color: var(--oc-gray-1);
+  color: var(--oc-gray-7);
 }
 
 .logo {
@@ -873,17 +889,69 @@ strong {
 
 .cta {
   display: grid;
-  grid-template-columns: 7fr 5fr;
+  grid-template-columns: 2fr 1fr;
   background-image: linear-gradient(to right bottom, var(--oc-orange-4), var(--oc-orange-7));
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
-  min-height: 50rem;
   border-radius: var(--kegel-1);
   overflow: hidden;
+}
+.cta__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: var(--kegel-11);
+  row-gap: var(--kegel-9);
 }
 .cta__img {
   background-image: linear-gradient(to right bottom, rgba(var(--oc-orange-4-rgb), 0.3), rgba(var(--oc-orange-7-rgb), 0.3)), url(../img/eating.jpg);
   background-size: cover;
   background-position: center;
+}
+.cta__content {
+  padding: var(--kegel-15);
+}
+.cta__text {
+  font-size: var(--kegel-6);
+  line-height: var(--height-7);
+  margin-bottom: var(--kegel-14);
+}
+.cta > * {
+  color: #45260a;
+}
+.cta .heading-secondary {
+  margin-bottom: var(--kegel-12);
+}
+
+.cta__form *:focus {
+  box-shadow: 0 0 0 0.5rem var(--oc-orange-0);
+}
+.cta__form fieldset {
+  border: 0;
+}
+.cta__form label {
+  display: block;
+  font-size: var(--kegel-5);
+  font-weight: var(--weight-5);
+  margin-bottom: var(--kegel-2);
+}
+.cta__form input,
+.cta__form select {
+  width: 100%;
+  padding: var(--kegel-4);
+  font-size: var(--kegel-6);
+  font-family: inherit;
+  background-color: var(--oc-orange-0);
+  border: none;
+  border-radius: var(--kegel-1);
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  color: inherit;
+}
+.cta__form input::placeholder,
+.cta__form select::placeholder {
+  color: var(--oc-gray-6);
+}
+.cta__form__btn {
+  align-self: end;
+  padding: var(--kegel-4);
 }
 
 .container {

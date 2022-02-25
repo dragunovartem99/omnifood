@@ -6,16 +6,22 @@
 
 .cta {
   display: grid;
-  grid-template-columns: 7fr 5fr;
+  grid-template-columns: 2fr 1fr;
   background-image: linear-gradient(
     to right bottom,
     var(--oc-orange-4),
     var(--oc-orange-7)
   );
   box-shadow: 0 2.4rem 4.8rem rgba($color: #000000, $alpha: 0.1);
-  min-height: 50rem;
   border-radius: var(--kegel-1);
   overflow: hidden;
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--kegel-11);
+    row-gap: var(--kegel-9);
+  }
 
   &__img {
     background-image: linear-gradient(
@@ -26,5 +32,61 @@
       url(../img/eating.jpg);
     background-size: cover;
     background-position: center;
+  }
+
+  &__content {
+    padding: var(--kegel-15);
+  }
+
+  &__text {
+    font-size: var(--kegel-6);
+    line-height: var(--height-7);
+    margin-bottom: var(--kegel-14);
+  }
+
+  > * {
+    color: #45260a;
+  }
+
+  .heading-secondary {
+    margin-bottom: var(--kegel-12);
+  }
+}
+
+.cta__form {
+  *:focus {
+    box-shadow: 0 0 0 0.5rem var(--oc-orange-0);
+  }
+
+  fieldset {
+    border: 0;
+  }
+
+  label {
+    display: block;
+    font-size: var(--kegel-5);
+    font-weight: var(--weight-5);
+    margin-bottom: var(--kegel-2);
+  }
+  input,
+  select {
+    width: 100%;
+    padding: var(--kegel-4);
+    font-size: var(--kegel-6);
+    font-family: inherit;
+    background-color: var(--oc-orange-0);
+    border: none;
+    border-radius: var(--kegel-1);
+    box-shadow: 0 0.1rem 0.2rem rgba($color: #000000, $alpha: 0.1);
+    color: inherit;
+
+    &::placeholder {
+      color: var(--oc-gray-6);
+    }
+  }
+
+  &__btn {
+    align-self: end;
+    padding: var(--kegel-4);
   }
 }
