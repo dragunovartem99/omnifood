@@ -981,4 +981,17 @@ strong {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.footer {
+  padding-block: var(--space-1);
+}
+
+.footer__logo {
+  width: 100%;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--kegel-15);
+}
+
 /*# sourceMappingURL=style.css.map */

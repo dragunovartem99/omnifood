@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.footer {
+  padding-block: var(--space-1);
+}
+
+.footer {
+  &__logo {
+    width: 100%;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--kegel-15);
+  }
+}
