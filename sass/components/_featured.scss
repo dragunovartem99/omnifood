@@ -1,8 +1,6 @@
 @use "../abstracts" as *;
 
 .featured {
-  margin-block: var(--kegel-15) var(--kegel-11);
-
   .heading-secondary {
     font-size: var(--kegel-5);
     color: var(--oc-gray-6);

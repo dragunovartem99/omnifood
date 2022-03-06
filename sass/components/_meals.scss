@@ -1,7 +1,6 @@
 @use "../abstracts" as *;
 
 .meals {
-  margin-block: 0 var(--space-2);
   &__header {
     text-align: center;
   }
@@ -16,6 +15,9 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-4);
+  @include mq(lg) {
+    gap: var(--kegel-15);
+  }
   margin-bottom: var(--space-2);
 }
 
@@ -51,6 +53,9 @@
 
   &__content {
     padding: var(--kegel-10);
+    @include mq(lg) {
+      padding: var(--kegel-9);
+    }
   }
 
   &__img {
@@ -61,6 +66,9 @@
     color: var(--oc-gray-8);
     font-weight: var(--weight-7);
     margin-bottom: var(--kegel-10);
+    @include mq(lg) {
+      font-size: var(--kegel-9);
+    }
   }
 
   &__properties {

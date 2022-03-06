@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.section-functions,
+.section-featured,
+.section-meals,
+.section-testimonials {
+  margin-block: var(--kegel-15);
+
+  @include mq(lg) {
+    margin-block: var(--kegel-14);
+  }
+}
+
+.section-hero {
+  padding-block: var(--space-1) var(--space-4);
+  @include mq(lg) {
+    padding-block: var(--kegel-15) var(--space-2);
+  }
+}
+
+.section-hero,
+.section-testimonials {
+  background-color: var(--oc-orange-0);
+}

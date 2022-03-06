@@ -8,3 +8,42 @@
   height: var(--space-3); // to later stickyness
   padding-inline: var(--kegel-10);
 }
+
+.main-nav {
+  &__links {
+    display: flex;
+    gap: var(--kegel-10);
+    list-style: none;
+    @include mq(lg) {
+      gap: var(--kegel-8);
+    }
+  }
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--oc-gray-8);
+      font-weight: var(--weight-5);
+      font-size: var(--kegel-6);
+      transition: all 0.3s ease;
+    }
+    &:hover,
+    &:active {
+      color: var(--oc-orange-7);
+    }
+  }
+
+  &__link--cta {
+    &:link,
+    &:visited {
+      color: var(--oc-white);
+      background-color: var(--oc-orange-5);
+      border-radius: 1rem;
+      padding: var(--kegel-2) var(--kegel-6);
+    }
+    &:hover,
+    &:active {
+      background-color: var(--oc-orange-7);
+    }
+  }
+}

@@ -1,7 +1,6 @@
 @use "../abstracts" as *;
 
 .testimonials {
-  background-color: var(--oc-orange-0);
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;

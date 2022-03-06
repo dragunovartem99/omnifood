@@ -1,16 +1,14 @@
 @use "../abstracts/" as *;
 
-.hero-w {
-  background-color: var(--oc-orange-0);
-}
-
 .hero {
-  padding-block: var(--space-1) var(--space-4);
   max-width: 130rem;
   padding-inline: var(--kegel-11);
   margin-inline: auto;
   display: grid;
   gap: var(--space-4);
+  @include mq(lg) {
+    gap: var(--space-1);
+  }
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 

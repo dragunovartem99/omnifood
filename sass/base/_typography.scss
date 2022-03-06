@@ -2,6 +2,14 @@
 
 html {
   font-size: 62.5%;
+
+  @include mq(md) {
+    font-size: 56.25%;
+  }
+
+  @include mq(sm) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -24,11 +32,17 @@ strong {
 
 .heading-primary {
   font-size: var(--kegel-15);
+  @include mq(lg) {
+    font-size: var(--kegel-14);
+  }
 }
 
 .heading-secondary {
   font-size: var(--kegel-13);
   margin-bottom: var(--space-3);
+  @include mq(lg) {
+    font-size: var(--kegel-12);
+  }
 }
 
 .heading-tertiary {
