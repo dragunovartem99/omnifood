@@ -11,3 +11,17 @@
     margin-bottom: var(--kegel-9);
   }
 }
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+
+  > * {
+    height: var(--kegel-10);
+    filter: brightness(0);
+    opacity: 0.5;
+    @include mq(md) {
+      height: var(--kegel-8);
+    }
+  }
+}

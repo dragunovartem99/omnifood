@@ -1,32 +1,33 @@
-//Media Queries Based on Chrome Web Tools
+// Media Queries Based on Common device resolutions
+// https://gs.statcounter.com/screen-resolution-stats
 
 @mixin mq($breakpoint) {
   @if $breakpoint == xl {
-    // <1680px
+    // <1680px | Wide Desktop
     @media only screen and (max-width: 105em) {
       @content;
     }
   }
   @if $breakpoint == lg {
-    // <1360px
+    // <1360px | Desktop
     @media only screen and (max-width: 85em) {
       @content;
     }
   }
   @if $breakpoint == md {
-    // <1040px
+    // <1040px | Tablet Landscape
     @media only screen and (max-width: 65em) {
       @content;
     }
   }
   @if $breakpoint == sm {
-    // <720px
+    // <720px | Tablet Portrait
     @media only screen and (max-width: 45em) {
       @content;
     }
   }
   @if $breakpoint == xs {
-    // <480px
+    // <480px | Mobile
     @media only screen and (max-width: 30em) {
       @content;
     }
