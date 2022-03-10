@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,13 +11,14 @@
 }
 
 .main-nav {
+  @include mq(sm) {
+    display: none;
+  }
+
   &__links {
     display: flex;
     gap: var(--kegel-10);
     list-style: none;
-    @include mq(lg) {
-      gap: var(--kegel-8);
-    }
   }
   &__link {
     &:link,
@@ -45,5 +47,56 @@
     &:active {
       background-color: var(--oc-orange-7);
     }
+  }
+}
+
+.header__burger {
+  display: none;
+  @include mq(sm) {
+    display: block;
+  }
+
+  background-color: transparent;
+  border: none;
+
+  &__icon {
+    color: var(--oc-gray-8);
+    width: var(--kegel-12);
+    height: var(--kegel-12);
+  }
+
+  .header__burger__icon[name="menu-outline"] {
+    display: block;
+  }
+
+  .header__burger__icon[name="close-outline"] {
+    display: none;
+  }
+}
+
+.enable-mobile-nav {
+  .main-nav {
+    display: block;
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__links {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .header__burger__icon[name="menu-outline"] {
+    display: none;
+  }
+
+  .header__burger__icon[name="close-outline"] {
+    display: block;
   }
 }
