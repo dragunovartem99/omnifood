@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Omnifood — never cook again!</title>
 
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,15 +20,15 @@
 
   <body>
     <header class="header">
-      <img class="logo" src="/img/omnifood-logo.png" alt="" />
+      <a href="#"><img class="logo" src="/img/omnifood-logo.png" alt="" /></a>
       <nav class="main-nav">
         <ul class="main-nav__links">
-          <li><a class="main-nav__link" href="#">How it works</a></li>
-          <li><a class="main-nav__link" href="#">Meals</a></li>
-          <li><a class="main-nav__link" href="#">Testimonials</a></li>
-          <li><a class="main-nav__link" href="#">Pricing</a></li>
+          <li><a class="main-nav__link" href="#functions">How it works</a></li>
+          <li><a class="main-nav__link" href="#product-examples">Meals</a></li>
+          <li><a class="main-nav__link" href="#reviews">Testimonials</a></li>
+          <li><a class="main-nav__link" href="#plans">Pricing</a></li>
           <li>
-            <a class="main-nav__link main-nav__link--cta" href="#"
+            <a class="main-nav__link main-nav__link--cta" href="#cta"
               >Try for free</a
             >
           </li>
@@ -50,8 +52,8 @@
               nutritional needs.
             </p>
             <div class="hero__buttons">
-              <a class="btn btn--primary" href="#">Start eating well</a>
-              <a class="btn btn--white" href="#">Learn more &darr;</a>
+              <a class="btn btn--primary" href="#cta">Start eating well</a>
+              <a class="btn btn--white" href="#functions">Learn more &darr;</a>
             </div>
             <div class="hero__customers">
               <div class="hero__customers__imgs">
@@ -86,7 +88,7 @@
         </div>
       </section>
 
-      <section class="section-functions">
+      <section class="section-functions" id="functions">
         <div class="product-functions container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -143,7 +145,7 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section class="section-meals" id="product-examples">
         <div class="meals container">
           <div class="meals__header">
             <div class="subheading">Meals</div>
@@ -259,7 +261,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="reviews">
         <div class="testimonials">
           <div class="testimonials__content">
             <div class="subheading">Testimonials</div>
@@ -360,7 +362,7 @@
         </div>
       </section>
 
-      <section class="plans container">
+      <section class="plans container" id="plans">
         <div class="subheading">Pricing</div>
         <h2 class="heading-secondary">Eating well without breaking the bank</h2>
         <div class="plan__items">
@@ -472,7 +474,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="cta container">
           <div class="cta__content">
             <h2 class="heading-secondary">Get your first meal for free!</h2>
